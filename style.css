@@ -1,0 +1,69 @@
+body{
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://images.pexels.com/photos/133826/pexels-photo-133826.jpeg?auto=compress&cs=tinysrgb&w=800') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#form{
+    width: 400px;
+    background-color: rgba(185, 187, 180, 0.919);
+    border-radius: 5px;
+    padding: 30px;
+}
+
+h1{
+    text-align: center;
+    color: #433f3f;
+}
+
+#form button{
+    background-color: #323137;
+    color: white;
+    border: 1px solid #716c72;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 0px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-group input{
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid rgb(34,193,195);
+}
+
+.input-group input:focus{
+    outline: 0;
+}
+
+.input-group .error{
+    color: rgb(242, 18, 18);
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.input-group.success input{
+    border-color: #0cc477;
+}
+
+.input-group.error input{
+    border-color: rgb(206, 67, 67);
+}
