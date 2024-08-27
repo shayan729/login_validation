@@ -1,4 +1,4 @@
-body{
+body {
     background: #232526;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -12,58 +12,91 @@ body{
     background-size: cover;
 }
 
-#form{
-    width: 400px;
+#form {
+    width: 90%;
+    max-width: 400px;
     background-color: rgba(185, 187, 180, 0.919);
     border-radius: 5px;
-    padding: 30px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-h1{
+h1 {
     text-align: center;
     color: #433f3f;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-#form button{
+#form button {
     background-color: #323137;
     color: white;
     border: 1px solid #716c72;
     border-radius: 5px;
-    padding: 10px;
-    margin: 20px 0px;
+    padding: 12px;
+    margin: 20px 0;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
     width: 100%;
+    transition: background-color 0.3s ease;
 }
 
-.input-group{
+#form button:hover {
+    background-color: #1e1f1f;
+}
+
+.input-group {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
 }
 
-.input-group input{
+.input-group input {
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 5px;
     padding: 10px;
     border: 1px solid rgb(34,193,195);
 }
 
-.input-group input:focus{
+.input-group input:focus {
     outline: 0;
 }
 
-.input-group .error{
+.input-group .error {
     color: rgb(242, 18, 18);
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 5px;
 }
 
-.input-group.success input{
+.input-group.success input {
     border-color: #0cc477;
 }
 
-.input-group.error input{
+.input-group.error input {
     border-color: rgb(206, 67, 67);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    #form {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    #form button {
+        font-size: 16px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+    }
+
+    .input-group .error {
+        font-size: 12px;
+    }
 }
